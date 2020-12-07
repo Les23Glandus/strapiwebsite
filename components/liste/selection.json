@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_liste_selections",
+  "info": {
+    "name": "Selection",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "selection": {
+      "model": "selection"
+    }
+  }
+}

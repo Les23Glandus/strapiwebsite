@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actus",
+  "info": {
+    "name": "Actu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "article": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "channel": {
+      "type": "enumeration",
+      "enum": [
+        "escape",
+        "jeu",
+        "autre"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "uniquepath": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

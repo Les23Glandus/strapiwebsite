@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pay": {
+      "model": "pays",
+      "via": "addresses"
+    },
+    "region": {
+      "model": "region",
+      "via": "addresses"
+    },
+    "street": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "enseigne": {
+      "via": "addresses",
+      "model": "company"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_avantapres_ilustrations",
+  "info": {
+    "name": "Ilustration",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "when": {
+      "type": "date"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

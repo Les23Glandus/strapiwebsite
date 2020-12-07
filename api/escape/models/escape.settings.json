@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "escapes",
+  "info": {
+    "name": "Escape",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mini": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "scenario": {
+      "type": "richtext"
+    },
+    "story": {
+      "type": "richtext"
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "lesPlus": {
+      "type": "richtext"
+    },
+    "lesMoins": {
+      "type": "richtext"
+    },
+    "rate": {
+      "type": "decimal",
+      "default": 3,
+      "min": 1,
+      "max": 5
+    },
+    "preventPush": {
+      "type": "boolean",
+      "default": false
+    },
+    "isOpen": {
+      "type": "boolean",
+      "default": true
+    },
+    "nbPlayerMin": {
+      "type": "integer"
+    },
+    "nbPlayerMax": {
+      "type": "integer"
+    },
+    "enseigne": {
+      "via": "escapes",
+      "model": "company"
+    },
+    "tags": {
+      "via": "escapes",
+      "collection": "tags",
+      "dominant": true
+    },
+    "avantapres": {
+      "type": "component",
+      "repeatable": true,
+      "component": "avantapres.ilustration"
+    },
+    "uniquepath": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "date": {
+      "type": "date"
+    },
+    "selections": {
+      "collection": "selection",
+      "via": "escapes"
+    }
+  }
+}

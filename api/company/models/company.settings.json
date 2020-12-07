@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compagnies",
+  "info": {
+    "name": "Enseigne",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "richtext"
+    },
+    "ourExperience": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "string"
+    },
+    "isOpen": {
+      "type": "boolean"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "uniquepath": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "escapes": {
+      "collection": "escape",
+      "via": "enseigne"
+    },
+    "addresses": {
+      "collection": "address",
+      "via": "enseigne"
+    }
+  }
+}

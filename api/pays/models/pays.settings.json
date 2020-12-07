@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pays",
+  "info": {
+    "name": "Pays"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "regions": {
+      "via": "pays",
+      "collection": "region"
+    },
+    "addresses": {
+      "via": "pay",
+      "collection": "address"
+    }
+  }
+}

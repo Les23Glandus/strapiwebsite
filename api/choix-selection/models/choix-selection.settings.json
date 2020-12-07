@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "choix_selections",
+  "info": {
+    "name": "ChoixSelection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Selections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "liste.selection"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "selections",
+  "info": {
+    "name": "Selection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mini": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "article": {
+      "type": "richtext"
+    },
+    "escapes": {
+      "via": "selections",
+      "collection": "escape",
+      "dominant": true
+    },
+    "uniquepath": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

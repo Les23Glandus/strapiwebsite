@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "filter_presets",
+  "info": {
+    "name": "FilterPresets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "presets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "liste.presets"
+    }
+  }
+}
