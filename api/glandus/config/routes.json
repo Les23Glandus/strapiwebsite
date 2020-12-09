@@ -2,56 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/escapes",
-      "handler": "escape.find",
+      "path": "/glanduses",
+      "handler": "glandus.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/escapes/sum",
-      "handler": "escape.sum",
+      "path": "/glanduses/count",
+      "handler": "glandus.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/escapes/count",
-      "handler": "escape.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/escapes/:id",
-      "handler": "escape.findOne",
+      "path": "/glanduses/:id",
+      "handler": "glandus.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/escapes",
-      "handler": "escape.create",
+      "path": "/glanduses",
+      "handler": "glandus.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/escapes/:id",
-      "handler": "escape.update",
+      "path": "/glanduses/:id",
+      "handler": "glandus.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/escapes/:id",
-      "handler": "escape.delete",
+      "path": "/glanduses/:id",
+      "handler": "glandus.delete",
       "config": {
         "policies": []
       }

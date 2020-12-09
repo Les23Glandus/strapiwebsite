@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_liste_realisations",
+  "info": {
+    "name": "Realisation",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "saveWorld": {
+      "type": "boolean"
+    },
+    "saveUs": {
+      "type": "boolean"
+    },
+    "rituals": {
+      "type": "boolean"
+    },
+    "plan": {
+      "type": "boolean"
+    },
+    "timeTravels": {
+      "type": "boolean"
+    },
+    "prisons": {
+      "type": "boolean"
+    },
+    "tresors": {
+      "type": "boolean"
+    }
+  }
+}

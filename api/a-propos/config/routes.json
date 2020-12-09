@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/a-propos",
+      "handler": "a-propos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/a-propos",
+      "handler": "a-propos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/a-propos",
+      "handler": "a-propos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

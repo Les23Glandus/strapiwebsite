@@ -80,12 +80,12 @@
       "type": "integer"
     },
     "enseigne": {
-      "via": "escapes",
-      "model": "company"
+      "model": "company",
+      "via": "escapes"
     },
     "tags": {
-      "via": "escapes",
       "collection": "tags",
+      "via": "escapes",
       "dominant": true
     },
     "avantapres": {
@@ -103,6 +103,14 @@
     "selections": {
       "collection": "selection",
       "via": "escapes"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "realisation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "liste.realisation"
     }
   }
 }

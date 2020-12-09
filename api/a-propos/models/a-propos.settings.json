@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "a_propos",
+  "info": {
+    "name": "APropos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "article": {
+      "type": "richtext"
+    },
+    "illustrations": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
