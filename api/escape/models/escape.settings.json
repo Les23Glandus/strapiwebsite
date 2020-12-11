@@ -111,6 +111,11 @@
       "type": "component",
       "repeatable": false,
       "component": "liste.realisation"
+    },
+    "addresses": {
+      "collection": "address",
+      "via": "escapes",
+      "dominant": true
     }
   }
 }
