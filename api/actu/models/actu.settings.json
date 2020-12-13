@@ -45,6 +45,17 @@
     "uniquepath": {
       "type": "uid",
       "targetField": "title"
+    },
+    "mini": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
