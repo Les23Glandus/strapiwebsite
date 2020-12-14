@@ -54,16 +54,16 @@
     "color": {
       "type": "enumeration",
       "enum": [
-        "Black_00000082",
-        "Gold_C08A0082",
-        "Red_C0000082",
-        "Orange_C05C0082",
-        "Green_00C03682",
-        "Aqua_00C09E82",
-        "Cyan_0092C082",
-        "Blue_0013C082",
-        "Purple_5500C082",
-        "Pink_BC00C082"
+        "Black",
+        "Gold",
+        "Red",
+        "Orange",
+        "Green",
+        "Aqua",
+        "Cyan",
+        "Blue",
+        "Purple",
+        "Pink"
       ]
     }
   }
