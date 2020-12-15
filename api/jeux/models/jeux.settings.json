@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jeux",
+  "info": {
+    "name": "Jeux",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mini": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "illustration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "article": {
+      "type": "richtext"
+    },
+    "editeur": {
+      "type": "text"
+    },
+    "uniquepath": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "date": {
+      "type": "date"
+    },
+    "jeux_types": {
+      "collection": "jeux-types",
+      "via": "jeuxes"
+    }
+  }
+}

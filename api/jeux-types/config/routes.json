@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/jeux-types",
+      "handler": "jeux-types.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jeux-types/count",
+      "handler": "jeux-types.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jeux-types/:id",
+      "handler": "jeux-types.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jeux-types",
+      "handler": "jeux-types.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/jeux-types/:id",
+      "handler": "jeux-types.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/jeux-types/:id",
+      "handler": "jeux-types.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
