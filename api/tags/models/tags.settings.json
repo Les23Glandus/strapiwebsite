@@ -18,24 +18,13 @@
       "type": "boolean",
       "default": false
     },
-    "picto": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "useInFilter": {
       "type": "boolean",
       "default": true
     },
     "escapes": {
-      "via": "tags",
-      "collection": "escape"
+      "collection": "escape",
+      "via": "tags"
     },
     "isGold": {
       "type": "boolean",

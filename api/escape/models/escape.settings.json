@@ -84,8 +84,8 @@
       "via": "escapes"
     },
     "tags": {
-      "collection": "tags",
       "via": "escapes",
+      "collection": "tags",
       "dominant": true
     },
     "avantapres": {
@@ -101,8 +101,8 @@
       "type": "date"
     },
     "selections": {
-      "via": "escapes",
-      "collection": "selection"
+      "collection": "selection",
+      "via": "escapes"
     },
     "description": {
       "type": "richtext"
@@ -116,6 +116,9 @@
       "collection": "address",
       "via": "escapes",
       "dominant": true
+    },
+    "glandusor": {
+      "type": "string"
     }
   }
 }

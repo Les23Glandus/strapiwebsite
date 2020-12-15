@@ -43,8 +43,8 @@
       "type": "richtext"
     },
     "escapes": {
-      "collection": "escape",
       "via": "selections",
+      "collection": "escape",
       "dominant": true
     },
     "uniquepath": {
