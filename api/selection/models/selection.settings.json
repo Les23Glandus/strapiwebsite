@@ -51,6 +51,10 @@
       "type": "uid",
       "targetField": "title"
     },
+    "colorpicker": {
+      "type": "colorpicker",
+      "columnType": "longtext"
+    },
     "color": {
       "type": "enumeration",
       "enum": [
