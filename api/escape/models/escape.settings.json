@@ -80,12 +80,12 @@
       "type": "integer"
     },
     "enseigne": {
-      "via": "escapes",
-      "model": "company"
+      "model": "company",
+      "via": "escapes"
     },
     "tags": {
-      "via": "escapes",
       "collection": "tags",
+      "via": "escapes",
       "dominant": true
     },
     "avantapres": {
@@ -132,6 +132,11 @@
     "arelire": {
       "type": "boolean",
       "default": true
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "liste.articles"
     }
   }
 }

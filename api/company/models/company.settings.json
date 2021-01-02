@@ -53,8 +53,8 @@
       "targetField": "name"
     },
     "escapes": {
-      "collection": "escape",
-      "via": "enseigne"
+      "via": "enseigne",
+      "collection": "escape"
     },
     "addresses": {
       "collection": "address",

@@ -69,6 +69,15 @@
         "Purple",
         "Pink"
       ]
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "liste.articles"
+    },
+    "arelire": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

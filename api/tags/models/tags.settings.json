@@ -23,8 +23,8 @@
       "default": true
     },
     "escapes": {
-      "collection": "escape",
-      "via": "tags"
+      "via": "tags",
+      "collection": "escape"
     },
     "isGold": {
       "type": "boolean",
