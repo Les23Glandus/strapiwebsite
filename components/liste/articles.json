@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_liste_articles",
+  "info": {
+    "name": "articles",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "article": {
+      "type": "richtext"
+    }
+  }
+}

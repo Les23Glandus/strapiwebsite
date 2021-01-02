@@ -32,6 +32,10 @@
     },
     "description": {
       "type": "text"
+    },
+    "english": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -119,6 +119,19 @@
     },
     "glandusor": {
       "type": "string"
+    },
+    "content": {
+      "type": "enumeration",
+      "enum": [
+        "Cadre_Only",
+        "A_Completer",
+        "Complet"
+      ],
+      "default": "Cadre_Only"
+    },
+    "arelire": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

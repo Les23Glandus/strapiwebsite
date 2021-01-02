@@ -55,6 +55,11 @@
     "jeux_types": {
       "collection": "jeux-types",
       "via": "jeuxes"
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "liste.articles"
     }
   }
 }
