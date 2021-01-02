@@ -53,12 +53,16 @@
       "targetField": "name"
     },
     "escapes": {
-      "via": "enseigne",
-      "collection": "escape"
+      "collection": "escape",
+      "via": "enseigne"
     },
     "addresses": {
       "collection": "address",
       "via": "enseigne"
+    },
+    "arelire": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

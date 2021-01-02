@@ -56,6 +56,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "arelire": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

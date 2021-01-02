@@ -80,8 +80,8 @@
       "type": "integer"
     },
     "enseigne": {
-      "model": "company",
-      "via": "escapes"
+      "via": "escapes",
+      "model": "company"
     },
     "tags": {
       "via": "escapes",
