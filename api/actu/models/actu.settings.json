@@ -60,6 +60,11 @@
     "arelire": {
       "type": "boolean",
       "default": true
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "liste.articles"
     }
   }
 }
