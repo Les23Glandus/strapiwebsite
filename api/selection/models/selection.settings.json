@@ -39,21 +39,14 @@
     "description": {
       "type": "richtext"
     },
-    "article": {
-      "type": "richtext"
-    },
     "escapes": {
-      "via": "selections",
       "collection": "escape",
+      "via": "selections",
       "dominant": true
     },
     "uniquepath": {
       "type": "uid",
       "targetField": "title"
-    },
-    "colorpicker": {
-      "type": "colorpicker",
-      "columnType": "longtext"
     },
     "color": {
       "type": "enumeration",
@@ -78,6 +71,14 @@
     "arelire": {
       "type": "boolean",
       "default": true
+    },
+    "priority": {
+      "type": "integer",
+      "default": 1
+    },
+    "colorpicker": {
+      "type": "colorpicker",
+      "columnType": "longtext"
     }
   }
 }
