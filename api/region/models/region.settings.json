@@ -20,6 +20,10 @@
     "addresses": {
       "via": "region",
       "collection": "address"
+    },
+    "regroupements": {
+      "via": "region",
+      "collection": "regroupement"
     }
   }
 }

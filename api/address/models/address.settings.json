@@ -38,6 +38,10 @@
     "escapes": {
       "via": "addresses",
       "collection": "escape"
+    },
+    "regroupement": {
+      "via": "addresses",
+      "model": "regroupement"
     }
   }
 }

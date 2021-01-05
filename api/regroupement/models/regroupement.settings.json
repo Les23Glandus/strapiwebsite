@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regroupements",
+  "info": {
+    "name": "Regroupement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "addresses": {
+      "collection": "address",
+      "via": "regroupement"
+    },
+    "region": {
+      "model": "region",
+      "via": "regroupements"
+    }
+  }
+}

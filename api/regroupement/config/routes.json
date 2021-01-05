@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/regroupements",
+      "handler": "regroupement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/regroupements/count",
+      "handler": "regroupement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/regroupements/:id",
+      "handler": "regroupement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/regroupements",
+      "handler": "regroupement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/regroupements/:id",
+      "handler": "regroupement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/regroupements/:id",
+      "handler": "regroupement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
